@@ -1,0 +1,45 @@
+artifakt_version: "0.3"
+tag: 0.0.2
+build_engine: terraform
+available_regions:
+ - eastasia
+ - southeastasia
+ - centralus
+ - eastus
+ - eastus2
+ - westus
+ - northcentralus
+ - southcentralus
+ - northeurope
+ - westeurope
+ - japanwest
+ - japaneast
+ - brazilsouth
+ - australiaeast
+ - australiasoutheast
+ - southindia
+ - centralindia
+ - westindia
+ - canadacentral
+ - canadaeast
+ - uksouth
+ - ukwest
+ - westcentralus
+ - westus2
+ - koreacentral
+ - koreasouth
+ - francecentral
+ - francesouth
+ - australiacentral
+ - australiacentral2
+infrastructure:
+  build_time: 390 #seconds
+  cost_estimation:
+    monthly_price: 122.43  #in dollars per month
+    details: Price calculated using managed service mysql gen4 B2 instance and hosting plan basic .
+outputs:
+  -
+    code: main_endpoint
+    name: Public URL
+    description: Fully qualified URL
+    category: Application
