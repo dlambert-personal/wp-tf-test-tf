@@ -90,7 +90,7 @@ resource "azurerm_template_deployment" "website" {
    },
    "variables":{  
       "connectionString":"[concat('Database=', parameters('dbName'), ';Data Source=', parameters('dbServer'), ';User Id=',parameters('dbuser'),'@',parameters('dbhost'),';Password=', parameters('dbAdminPassword'))]",
-      "repoUrl":"https://github.com/dlambert-personal/wordpress-terraform.git/wordpress/",
+      "repoUrl":"https://github.com/dlambert-personal/wp-tf-test-wp.git",
       "account_name":"dlambert@appdev.info:dGewfdPZd68y",
       "branch":"master",
       "workerSize":"[parameters('workerSize')]",

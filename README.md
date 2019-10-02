@@ -1,5 +1,7 @@
 # Platform Wordpress (Azure Terraform)
 
+forked from https://github.com/artifakt-io/platform-azure-terraform-wordpress
+
 This is a project to deploy a wordpress on Azure using Terraform.
 
 This project deploy two layers. First one, the MySQL instance (managed service) and second one, the Wordpress hosting plan.
@@ -16,7 +18,7 @@ Init and retrieve the provider:
 > terraform init
 
 Apply and deploy the application:
-> terraform apply
+> terraform apply -var-file="env.tfvars"
 
 The Artifakt engine will execute similar instructions.
 
